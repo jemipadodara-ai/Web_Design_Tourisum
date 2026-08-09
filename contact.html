@@ -1,0 +1,241 @@
+<html>
+  <head>
+    <title>Contact</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url(./gallery/back2.jpg);
+        backdrop-filter: blur(2px);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+        color: #333333;
+      }
+      
+      .navbar a {
+        text-decoration: none;
+        color: #333333;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      .navbar a:hover {
+        color: #ff9933;
+      }
+
+      .main-header {
+        background: white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 15px;
+      }
+
+      .fieldset {
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 10px black;
+        margin: 20px auto;
+        width: 80%;
+      }
+
+      legend{
+        font-size: x-large;
+        font-weight: bold;
+        color: peru;
+      }
+
+      label {
+        font-size: large;
+        font-weight: 500;
+        color: aliceblue;
+      }
+
+      .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      button {
+        background-color: #138808;
+        color: white;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 5px;
+        border: 1px solid white;
+        cursor: pointer;
+        font-size: large;
+        justify-content: center;
+      }
+
+      button:hover {
+        background-color: #ff9933;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      h2 {
+        text-align: center;
+        margin-top: 40px;
+      }
+
+      .address {
+        background: white;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        max-width: 600px;
+        margin: 20px auto;
+        font-size: large;
+      }
+
+      .map {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 0 20px;
+      }
+
+      .map iframe {
+        width: 100%;
+        max-width: 800px;
+        height: 450px;
+        border: 0;
+        border-radius: 10px;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .fieldset {
+          width: 95%;
+          padding: 20px;
+        }
+        .address {
+          width: 90%;
+        }
+        .map iframe {
+          height: 300px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .navbar {
+          flex-wrap: wrap;
+          gap: 8px;
+          justify-content: center;
+          line-height: 2;
+        }
+
+        .navbar a {
+          font-size: 14px;
+        }
+
+        .address {
+          width: 95%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>Contact And Information</h1>
+      <nav class="navbar">
+        <a href="index.html">Home</a>| <a href="places.html">Places</a>|
+        <a href="info.html">Info</a>| <a href="contact.html">Contact</a>|
+        <a href="about.html">About</a>| <a href="gallery.html">Gallery</a>
+      </nav>
+    </header>
+
+    <form method="get">
+      <fieldset class="fieldset">
+        <legend>Personal Information</legend>
+
+          <label for="name">Name:</label><br>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required/><br><br>
+          
+          <label for="email">email:</label><br>
+          <input type="email" name="email" id="email" pattern="[a-z0-Z0-9._%+-]+@[a-z0-ZA-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address (e.g., user@domain.com)" placeholder="Enter your email" required/>
+          <br><br>
+          <label for="phone">Phone number:</label><br>
+          <input type="tel" name="phone" id="phone" pattern="[6-9][0-9]{9}" placeholder="Enter your phone number" required/>
+          <br><br>
+          <label for="age">Age:</label><br>
+          <input type="number" name="age" min="18" max="100" id="age" placeholder="Enter your age"  required/>
+          
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Travel Information</legend>
+
+          <label for="destination">Preferred Destination:</label><br>
+          <input type="text" name="destination" id="destination" placeholder="Enter your preferred destination" required/><br><br>
+          
+          <label for="traveller_type">Type of traveller:</label><br>
+          <label for="solo">solo</label>
+          <input type="radio" id="solo" name="traveller_type" value="Solo" required/>
+          <label for="Family">family</label>
+          <input type="radio" id="Family" name="traveller_type" value="Family" required/>
+          <label for="Friends">Friends</label>
+          <input type="radio" id="Friends" name="traveller_type" value="Friends" required/><br><br>
+            
+          <label for="looking_for">What Are You Looking For:</label><br>
+          <label for="Adventure">Adventure </label>
+          <input type="checkbox" name="looking_for" value="Adventure" id="Adventure"/>
+          <label for="Relaxation">Relaxation </label>
+          <input type="checkbox" name="looking_for" value="Relaxation" id="Relaxation"/>
+          <label for="Cultural Experiences">Cultural Experiences </label>
+          <input type="checkbox" name="looking_for" value="Cultural Experiences" id="Cultural Experiences"/>
+          <label for="Nature">Nature </label>
+          <input type="checkbox" name="looking_for" value="Nature" id="Nature"/><br>
+
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Feedback</legend>
+        <label for="comments" style="font-size: x-large">Enter your Feedback:-</label><br />
+        <textarea name="comments" id="comments" rows="5" cols="50" placeholder="Enter your comments here..." required></textarea>
+      </fieldset>
+
+      <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+
+    </form>
+    <br/><br/>
+    <h2 style="color: white;">Our Location</h2>
+    <div class="map"><iframe src="https://maps.app.goo.gl/NXEXZQMK4iwV9HZUA"></iframe></div>
+    <br /><br />
+
+    <address class="address">
+      Tourist Information Center<br />
+      Vadodara, Gujarat, India<br />
+      Phone: +91 12345 67890<br />
+      Email: <a href="mailto:tourist@gmail.com">tourist@gmail.com</a><br />
+    </address>
+
+    <br /><br />
+    <footer class="main-footer"><p align="center">© 2026 Incredible India. All rights reserved.</p></footer>
+
+  </body>
+</html>
