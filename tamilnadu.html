@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Incredible India | Tamil Nadu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        color: #333333;
+      }
+
+      .main-header {
+        background: white;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 15px;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+      }
+
+      .container {
+        max-width: 80%;
+        margin: 20px auto;
+        padding: 0 20px;
+        
+      }
+
+      .box {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+        margin: 30px 0;
+      }
+
+      .title {
+        color: #d32f2f;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: xx-large;
+      }
+
+      .image {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+      }
+
+      img {
+        border-radius: 10px;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .text-content p {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+
+      .list {
+        list-style: square;
+        margin-left: 20px;
+        color: #555;
+      }
+
+      .list li {
+        margin-bottom: 10px;
+        font-size: 15px;
+      }
+
+      .info {
+        background: #000080;
+        color: white;
+        padding: 30px;
+        border-radius: 10px;
+      }
+
+      .info h3 {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ff9933;
+        display: inline-block;
+      }
+
+      .info ul {
+        list-style: none;
+      }
+
+      .info li {
+        margin-bottom: 10px;
+        font-size: 15px;
+      }
+
+      .main-footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+      @media screen and (max-width: 600px) {
+        .navbar {
+          flex-wrap: wrap; 
+          gap: 10px;
+          line-height: 2;
+        }
+
+        .navbar a {
+          font-size: 14px;
+        }
+      }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Tamil Nadu</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a> | 
+            <a href="places.html">Places</a> | 
+            <a href="info.html">Info</a> | 
+            <a href="contact.html">Contact</a> | 
+            <a href="about.html">About</a> | 
+            <a href="gallery.html">Gallery</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="box">
+            <h2 class="title">1. Chennai - Gateway to the South</h2>
+            <div class="image">
+                <img src="./gallery/tamilnadu1.webp" alt="Chennai Marina Beach">
+            </div>
+            <div class="text-content">
+                <p>Chennai, the capital of Tamil Nadu, is a vibrant city that perfectly blends traditional South Indian culture with modern urban life. It is famous for its historical landmarks and the iconic Marina Beach.</p>
+                <ul class="list">
+                    <li><strong>Marina Beach:</strong> One of the longest urban beaches in the world.</li>
+                    <li><strong>Kapaleeshwarar Temple:</strong> A stunning example of Dravidian architecture.</li>
+                    <li><strong>San Thome Basilica:</strong> A historic church built over the tomb of an apostle.</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="box">
+            <h2 class="title">2. Madurai - The Temple City</h2>
+            <div class="image">
+                <img src="./gallery/tamilnadu2.jpg" alt="Madurai Meenakshi Temple">
+            </div>
+            <div class="text-content">
+                <p>Madurai is one of the oldest continuously inhabited cities in the world and is the cultural soul of Tamil Nadu. It is home to the magnificent Meenakshi Amman Temple.</p>
+                <ul class="list">
+                    <li><strong>Meenakshi Temple:</strong> Famous for its towering gopurams and intricate carvings.</li>
+                    <li><strong>Thirumalai Nayakkar Mahal:</strong> A 17th-century palace showcasing Indo-Saracenic style.</li>
+                    <li><strong>Night Ceremony:</strong> Witness the rhythmic prayers and processions at the temple.</li>
+                </ul>
+            </div>
+        </article>
+
+        <section class="info">
+            <h3>Additional Information about Tamil Nadu</h3>
+            <ul>
+                <li><strong>Best Season:</strong> November to February when the weather is cool and pleasant.</li>
+                <li><strong>Culture:</strong> Rich in classical arts like Bharatanatyam and Carnatic music.</li>
+                <li><strong>Cuisine:</strong> Famous for Idli, Dosa, Sambhar, and the unique Chettinad flavors.</li>
+                <li><strong>Shopping:</strong> Renowned for Kanchipuram silk sarees and bronze icons.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2026 Incredible India. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
